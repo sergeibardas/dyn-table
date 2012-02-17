@@ -1,0 +1,74 @@
+﻿<html>
+	<head>
+		<script src="mustache.js"></script> 
+		<script src="jquery-1.7.1.js"></script>
+		<script src="dynamicTable.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	
+<h1>Компании</h1>	
+	
+<form id="global-form">
+	<div class="filter-controls">
+			<input type="text" id="filter-key" class="filter-key"/>
+			<div class="activity-filter-label">По виду деятельности</div>
+			<select id="activity-filter" class="activity-filter">
+				<option value="all">Все виды</option>
+				<option value="banking">Банковские услуги</option>
+				<option value="shops">Магазины</option>
+				<option value="beer">Пивные компании</option>
+				<option value="orgT">Магазин оргтехники</option>
+			</select>
+	</div>
+</form>
+	
+	<table id="dyn-table" class="dynamic-table">
+		<thead id="headers" class="header">
+			<tr>
+				<th>
+					<span style="display:none;" val='desc'>&darr;</span>
+					<span style="display:none;" val='asc'>&uarr;</span>
+					<a val="name">Название</a>
+				</th>
+				<th>
+					<span style="display:none;" val='desc'>&darr;</span>
+					<span style="display:none;" val='asc'>&uarr;</span>
+					<a val="activities">Виды деятельности</a>
+				</th>
+				<th>
+					<span style="display:none;" val='desc'>&darr;</span>
+					<span style="display:none;" val='asc'>&uarr;</span>
+					<a val="contactPerson">Контактное лицо</a>
+				</th>
+				<th>
+					<span style="display:none;" val='desc'>&darr;</span>
+					<span style="display:none;" val='asc'>&uarr;</span>
+					<a val="income">Заработано,грн.</a>
+				</th>
+				<th>
+					<span style="display:none;" val='desc'>&darr;</span>
+					<span style="display:none;" val='asc'>&uarr;</span>
+					<a val="sum">Сумма,грн.</a>
+				</th>
+				<th>
+					<span style="display:none;" val='desc'>&darr;</span>
+					<span style="display:none;" val='asc'>&uarr;</span>
+					<a val="deal">Сделки</a>
+				</th>
+			</tr>	
+		</thead>
+	</table>
+	
+	<div class="paging-container">
+		<a id="page-backward">&larr;Ctrl</a>
+			<span id="paging">
+				<a>1</a>
+				<a>2</a>
+				<a>3</a>
+				<a>4</a>
+				<a>5</a>
+			</span>
+		<a id="page-forward">Ctrl&rarr;</a>
+	</div>
+	
+</html>	

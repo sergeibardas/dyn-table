@@ -1,0 +1,100 @@
+body {
+		font-family:helvetica;
+	}
+.dynamic-table {
+	 cursor:default;
+}
+.dynamic-table td,.dynamic-table th {
+	 padding:10px;
+}
+.dynamic-table tbody tr td:nth-child(1) ,.dynamic-table tbody tr td:nth-child(3) {
+	 color:#1876AC;
+}
+.dynamic-table tbody tr td:nth-child(2){
+	 color:#FF1A00;
+}
+
+.dynamic-table a {
+	 text-decoration:none;
+	 border-bottom:1px dotted;
+}
+
+.dynamic-table a:hover {
+	 color:#FF1A00;
+}
+
+table tr:nth-child(1n+2):hover {
+  background-color:#E8F8FC;
+}
+
+.one-row {
+	height:300px;
+}
+.header{
+	background-color:#fff;
+}
+.filter-key {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left;
+	margin-right:50px;
+	margin-top:15px;
+	width:250px;
+}
+.activity-filter {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:200px;
+}
+
+.activity-filter-label {
+	font-weight:bold;font-size:12px;
+}
+
+.filter-controls {
+	height:50px;
+}
+
+.circle{
+	height: 20px;
+	width: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	float:left;
+	margin:2px;
+	color:#fff;
+}
+
+.y{
+	background-color: #FFB03D;
+	
+}
+
+.g{
+	background-color: #9EF263;
+}
+
+.r{
+	background-color: #FF1A00;
+}
+
+.paging-container{
+	margin-left:20px;
+}
+
+.paging-container a{
+	cursor:pointer;
+	margin-right:10px;
+}
+
+.paging-container a:hover{
+	color:#FF1A00;
+}
+
+.page-selected{
+	color:#FF1A00;
+	font-weight:bold;
+}
